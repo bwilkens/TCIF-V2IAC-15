@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<customer>
+    <address>
+        <city>Utrecht</city>
+        <street>Nijenoord 2</street>
+        <zip>3535 AA</zip>
+    </address>
+    <dateOfBirth>10 juni 1996</dateOfBirth>
+    <name>Berend Wilkens</name>
+</customer>
