@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xd:schema xmlns:xd="http://www.w3.org/2001/XMLSchema"
+	xmlns="http://www.hu.nl/powerresponse"
+	targetNamespace="http://www.hu.nl/powerresponse"
+	elementFormDefault="qualified">
+	<xd:element name="powerResponse">
+		<xd:complexType>
+			<xd:sequence>
+				<xd:element name="result" type="xd:long"/>
+			</xd:sequence>
+		</xd:complexType>
+	</xd:element>
+</xd:schema>

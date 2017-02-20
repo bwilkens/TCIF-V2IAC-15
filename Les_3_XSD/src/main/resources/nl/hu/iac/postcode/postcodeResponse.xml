@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<p:postcodeResponse xmlns:p="http://www.hu.nl/postcodeResponse" xmlns:p1="http://www.hu.nl/postcodeTypes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.hu.nl/postcodeResponse postcodeResponse.xsd ">
+  <p:postcode>3514tl</p:postcode>
+  <p:plaatsnaam>p:plaatsnaam</p:plaatsnaam>
+  <p:huis>
+    <p:straatnaam>p:straatnaam</p:straatnaam>
+    <p:nummer>1</p:nummer>
+    <p:toevoeging>p:toevoeging</p:toevoeging>
+  </p:huis>
+</p:postcodeResponse>

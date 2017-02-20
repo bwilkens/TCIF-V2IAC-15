@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema targetNamespace="http://www.hu.nl/postcodeTypes" 
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	<xs:simpleType name="postcodeType">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[1-9][0-9]{3}(\s)?[A-Za-z]{2}"></xs:pattern>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="nummerType">
+		<xs:restriction base="xs:integer">
+			<xs:minExclusive value="0"></xs:minExclusive>
+			<xs:maxInclusive value="99999"></xs:maxInclusive>
+		</xs:restriction>
+	</xs:simpleType>
+
+
+</xs:schema>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema 
+	targetNamespace="http://www.hu.nl/postcodeRequest" 
+	xmlns="http://www.hu.nl/postcodeRequest"
+	xmlns:pt="http://www.hu.nl/postcodeTypes" 
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	<xs:import namespace="http://www.hu.nl/postcodeTypes" schemaLocation="postcodeTypes.xsd" />
+	<xs:element name="postcodeRequest" type="postcodeRequestType" />
+	<xs:complexType name="postcodeRequestType">
+		<xs:sequence>
+			<xs:element name="postcode" type="pt:postcodeType" />
+			<xs:choice>
+				<xs:element name="huisnummer">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="nummer" type="pt:nummerType" />
+							<xs:element name="toevoeging" type="xs:string" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="postbus" type="pt:nummerType" />
+			</xs:choice>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>
