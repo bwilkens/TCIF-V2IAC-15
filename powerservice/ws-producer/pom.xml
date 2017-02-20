@@ -5,7 +5,7 @@
 	<packaging>war</packaging>
 	<parent>
 		<groupId>nl.hu.fnt.gsos</groupId>
-		<artifactId>ws-parent</artifactId>
+		<artifactId>powerservice</artifactId>
 		<version>1.0-SNAPSHOT</version>
 	</parent>
 	<name>Producer Maven Webapp</name>
@@ -44,6 +44,7 @@
 						<goals>
 							<goal>wsimport</goal>
 						</goals>
+
 					</execution>
 				</executions>
 				<configuration>
@@ -58,7 +59,7 @@
 					<!-- Package name -->
 					<packageName>nl.hu.iac.wsinterface</packageName>
 					<!-- generated source files destination -->
-					<sourceDestDir>target/generatedclasses</sourceDestDir>
+					<sourceDestDir>target/generated</sourceDestDir>
 				</configuration>
 			</plugin>
 		</plugins>
