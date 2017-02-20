@@ -1,0 +1,66 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>ws-producer</artifactId>
+	<packaging>war</packaging>
+	<parent>
+		<groupId>nl.hu.fnt.gsos</groupId>
+		<artifactId>ws-parent</artifactId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
+	<name>Producer Maven Webapp</name>
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.xml.ws</groupId>
+			<artifactId>jaxws-rt</artifactId>
+		</dependency>
+	</dependencies>
+	<build>
+		<finalName>ws-producer</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat7-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>jaxws-maven-plugin</artifactId>
+				<version>1.12</version>
+				<executions>
+					<execution>
+						<id>wsimport-from-jdk</id>
+						<goals>
+							<goal>wsimport</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<!--wsdls file directory -->
+					<wsdlDirectory>src/main/webapp/wsdl/</wsdlDirectory>
+					<!-- which wsdl file -->
+					<wsdlFiles>
+						<wsdlFile>powerservice.wsdl</wsdlFile>
+					</wsdlFiles>
+					<!-- Keep generated files -->
+					<keep>true</keep>
+					<!-- Package name -->
+					<packageName>nl.hu.iac.wsinterface</packageName>
+					<!-- generated source files destination -->
+					<sourceDestDir>target/generatedclasses</sourceDestDir>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
