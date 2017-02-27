@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:mt="http://www.hu.nl/schemas/booktypes" targetNamespace="http://www.hu.nl/schemas/books"
+	xmlns="http://www.hu.nl/schemas/books" elementFormDefault="qualified">
+	<!-- todo selector unieke namen category <unique name="uniqueIsbn10"> <selector 
+		xpath="isbn10" /> <field xpath="." /> </unique> -->
+	<xs:complexType name="categoryType">
+		<xs:annotation>
+			<xs:documentation>Node in de hiërarchische catergory structuur
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="name" type="xs:string" />
+			<xs:element name="category" type="categoryType" minOccurs="0"
+				maxOccurs="unbounded" />
+		</xs:sequence>
+		<xs:attribute name="id" use="required" type="xs:ID" />
+	</xs:complexType>
+	<xs:complexType name="bookType">
+		<xs:annotation>
+			<xs:documentation>Beschrijft een boek</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="title" type="xs:string" />
+			<xs:element name="subTitle" type="xs:string" minOccurs="0"
+				maxOccurs="1" nillable="false" />
+			<xs:element name="isbn10" type="isbn10Type" />
+			<xs:element name="isbn13" type="isbn13Type" />
+			<xs:element name="language" type="languageType" />
+			<xs:element name="paperback" type="xs:boolean" />
+			<xs:element name="pageCount" type="xs:positiveInteger" />
+			<xs:element name="publisher" type="xs:string" />
+			<xs:element name="image" type="xs:anyURI" />
+			<xs:element name="categories">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="category" maxOccurs="unbounded">
+							<xs:complexType>
+								<xs:sequence>
+								</xs:sequence>
+								<xs:attribute name="refid" type="xs:IDREF" />
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:simpleType name="isbn10Type">
+		<xs:restriction base="xs:positiveInteger">
+			<xs:pattern value="[\d]{10}" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="isbn13Type">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="978-[\d]{10}" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="languageType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="English"></xs:enumeration>
+			<xs:enumeration value="Nederlands"></xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="bookshelf">
+		<xs:complexType>
+			<xs:annotation>
+				<xs:documentation>Beschrijft de boekenplank</xs:documentation>
+			</xs:annotation>
+			<xs:sequence>
+				<xs:element name="categories">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="category" type="categoryType"
+								maxOccurs="unbounded" />
+
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="books">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="book" type="bookType" maxOccurs="unbounded" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>

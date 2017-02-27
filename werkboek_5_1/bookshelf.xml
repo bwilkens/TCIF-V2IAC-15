@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookshelf 
+	xmlns="http://www.hu.nl/schemas/books"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.hu.nl/schemas/books src/main/xsd/nl/hu/fnt/gsos/books.xsd " >
+	<categories>
+		<category id="id1">
+			<name>XML</name>
+			<category id="id2">
+				<name>XPath</name>
+			</category>
+			<category id="id3">
+				<name>XML Schema</name>
+			</category>
+			<category id="id4">
+				<name>XSLT</name>
+			</category>
+			<category id="id5">
+				<name>XSL-FO</name>
+			</category>
+			<category id="id6">
+				<name>XQuery</name>
+			</category>
+		</category>
+		<category id="id7">
+			<name>Java</name>
+			<category id="id100">
+				<name>SDK</name>
+				<category id="id8">
+					<name>Collections</name>
+				</category>
+				<category id="id9">
+					<name>NIO</name>
+				</category>
+				<category id="id10">
+					<name>Concurrency</name>
+				</category>
+			</category>
+			<category id="id1000">
+				<name>EE</name>
+				<category id="id11">
+					<name>EJB</name>
+				</category>
+				<category id="id12">
+					<name>Web</name>
+				</category>
+				<category id="id13">
+					<name>Webservices</name>
+				</category>
+			</category>
+			<category id="id0">
+				<name>Examen boeken</name>
+			</category>
+		</category>
+	</categories>
+	<books>
+		<book>
+			<title><![CDATA[Professional XML]]></title>
+			<subTitle><![CDATA[Programmer to Programmer]]></subTitle>
+			<isbn10><![CDATA[0471777773]]></isbn10>
+			<isbn13><![CDATA[978-0471777779]]></isbn13>
+			<language><![CDATA[English]]></language>
+			<paperback><![CDATA[true]]></paperback>
+			<pageCount><![CDATA[856]]></pageCount>
+			<publisher><![CDATA[Wrox]]></publisher>
+			<image><![CDATA[./books/978-0-471-77777-9.jpg]]></image>
+			<categories>
+				<category refid="id0" />
+				<category refid="id1" />
+				<category refid="id2" />
+				<category refid="id3" />
+				<category refid="id4" />
+				<category refid="id5" />
+				<category refid="id6" />
+			</categories>
+		</book>
+		<book>
+			<title>XML Schema</title>
+			<isbn10>0596002521</isbn10>
+			<isbn13>978-0596002527</isbn13>
+			<language>English</language>
+			<paperback>true</paperback>
+			<pageCount>400</pageCount>
+			<publisher>O'Reilly Media</publisher>
+			<image>./books/XML Schema.jpg</image>
+			<categories>
+				<category refid="id3" />
+			</categories>
+		</book>
+		<book>
+			<title><![CDATA[Regular Expressions Cookbook]]></title>
+			<isbn10><![CDATA[0596520689]]></isbn10>
+			<isbn13><![CDATA[978-0596520687]]></isbn13>
+			<language><![CDATA[English]]></language>
+			<paperback><![CDATA[true]]></paperback>
+			<pageCount><![CDATA[512]]></pageCount>
+			<publisher><![CDATA[O'Reilly Media]]></publisher>
+			<image><![CDATA[./books/Regular Expressions Cookbook.jpg]]></image>
+			<categories>
+				<category refid="id3" />
+			</categories>
+		</book>
+
+		<book>
+			<title><![CDATA[XSLT, 2nd Edition]]></title>
+			<subTitle><![CDATA[Now covers XSLT 2.0]]></subTitle>
+			<isbn10><![CDATA[0596527217]]></isbn10>
+			<isbn13><![CDATA[978-0596527211]]></isbn13>
+			<language><![CDATA[English]]></language>
+			<paperback><![CDATA[true]]></paperback>
+			<pageCount><![CDATA[988]]></pageCount>
+			<publisher><![CDATA[O'Reilly Media]]></publisher>
+			<image><![CDATA[./books/XSLT, 2nd Edition, Now covers XSLT 2.0.jpg]]></image>
+			<categories>
+				<category refid="id4" />
+			</categories>
+		</book>
+		<book>
+			<title><![CDATA[XSLT Cookbook, 2nd Edition]]></title>
+			<isbn10><![CDATA[0596009747]]></isbn10>
+			<isbn13><![CDATA[978-0596009748]]></isbn13>
+			<language><![CDATA[English]]></language>
+			<paperback><![CDATA[true]]></paperback>
+			<pageCount><![CDATA[784]]></pageCount>
+			<publisher><![CDATA[O'Reilly Media]]></publisher>
+			<image><![CDATA[./books/XSLT Cookbook, 2nd Edition.jpg]]></image>
+			<categories>
+				<category refid="id4" />
+			</categories>
+		</book>
+		<book>
+			<title><![CDATA[XQuery]]></title>
+			<isbn10><![CDATA[0596006349]]></isbn10>
+			<isbn13><![CDATA[978-0596006349]]></isbn13>
+			<language><![CDATA[English]]></language>
+			<paperback><![CDATA[true]]></paperback>
+			<pageCount><![CDATA[491]]></pageCount>
+			<publisher><![CDATA[O'Reilly Media]]></publisher>
+			<image><![CDATA[./books/XQuery.jpg]]></image>
+			<categories>
+				<category refid="id6" />
+			</categories>
+		</book>
+		<book>
+			<title><![CDATA[XQuery]]></title>
+			<subTitle>Kick Start</subTitle>
+			<isbn10><![CDATA[0672324792]]></isbn10>
+			<isbn13><![CDATA[978-0672324796]]></isbn13>
+			<language><![CDATA[English]]></language>
+			<paperback><![CDATA[true]]></paperback>
+			<pageCount><![CDATA[384]]></pageCount>
+			<publisher><![CDATA[Sams]]></publisher>
+			<image><![CDATA[./books/xquery-kikstart.jpg]]></image>
+			<categories>
+				<category refid="id6" />
+			</categories>
+		</book>
+		<book>
+			<title><![CDATA[Beginning XSLT and XPath]]></title>
+			<isbn10><![CDATA[0470477253]]></isbn10>
+			<isbn13><![CDATA[978-0470477250]]></isbn13>
+			<language><![CDATA[English]]></language>
+			<paperback><![CDATA[true]]></paperback>
+			<pageCount><![CDATA[432]]></pageCount>
+			<publisher><![CDATA[Wrox]]></publisher>
+			<image><![CDATA[./books/Beginning XSLT and XPath.jpg]]></image>
+			<categories>
+				<category refid="id2" />
+				<category refid="id4" />
+			</categories>
+		</book>
+
+		<book>
+			<title><![CDATA[XSL-FO]]></title>
+			<subTitle><![CDATA[Making XML Look Good in Print]]></subTitle>
+			<isbn10><![CDATA[0596003552]]></isbn10>
+			<isbn13><![CDATA[978-0596003555]]></isbn13>
+			<language><![CDATA[English]]></language>
+			<paperback><![CDATA[true]]></paperback>
+			<pageCount><![CDATA[288]]>
+			</pageCount>
+			<publisher><![CDATA[O'Reilly Media]]>
+			</publisher>
+			<image><![CDATA[./books/xslt-fo.jpg]]></image>
+			<categories>
+				<category refid="id5" />
+			</categories>
+		</book>
+
+
+		<book>
+			<title><![CDATA[SCJP]]>
+			</title>
+			<subTitle><![CDATA[Sun Certified Programmer for Java 6 Study Guide]]></subTitle>
+			<isbn10><![CDATA[0071591060]]></isbn10>
+			<isbn13><![CDATA[978-0071591065]]></isbn13>
+			<language><![CDATA[English]]></language>
+			<paperback><![CDATA[false]]>
+			</paperback>
+			<pageCount><![CDATA[851]]>
+			</pageCount>
+			<publisher><![CDATA[McGraw-Hill Osborne]]>
+			</publisher>
+			<image><![CDATA[./books/scjp-sun-certified-programmer-for-java-6-study-guide-exam-310-065.jpg]]></image>
+			<categories>
+				<category refid="id0" />
+				<category refid="id100" />
+			</categories>
+		</book>
+
+		<book>
+			<title><![CDATA[Head First Servlets and JSP]]>
+			</title>
+			<subTitle><![CDATA[Passing the Sun Certified Web Component Developer Exam]]></subTitle>
+			<isbn10><![CDATA[0596516681]]></isbn10>
+			<isbn13><![CDATA[978-0596516680]]></isbn13>
+			<language><![CDATA[English]]></language>
+			<paperback><![CDATA[true]]>
+			</paperback>
+			<pageCount><![CDATA[912]]>
+			</pageCount>
+			<publisher><![CDATA[O'Reilly Media]]>
+			</publisher>
+			<image><![CDATA[./books/head-first-servlets-and-jsp-passing-the-sun-certified-web-component-developer-exam-brain-friendly-guides.jpg]]></image>
+			<categories>
+				<category refid="id0" />
+				<category refid="id12" />
+			</categories>
+		</book>
+	</books>
+</bookshelf>
