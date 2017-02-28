@@ -4,5 +4,5 @@
 	xsi:schemaLocation="http://java.sun.com/xml/ns/jax-ws/ri/runtime http://docs.oracle.com/cd/E17802_01/webservices/webservices/docs/2.0/jaxws/sun-jaxws.xsd"
 	xmlns="http://java.sun.com/xml/ns/jax-ws/ri/runtime" version="2.0">
 	<endpoint name="ws-producer" implementation="nl.hu.iac.wsproducer.PowerServiceImpl"
-		url-pattern="/ws-producer" />
+		url-pattern="/soap" />
 </endpoints>
