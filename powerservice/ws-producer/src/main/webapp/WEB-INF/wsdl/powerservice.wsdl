@@ -5,18 +5,18 @@
 	xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
 	xmlns:http="http://schemas.xmlsoap.org/wsdl/http/"
 	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-	xmlns:req="http://nl.hu.fnt/powerservice/request"
-	xmlns:rsp="http://nl.hu.fnt/powerservice/response"
-	xmlns:flt="http://nl.hu.fnt/powerservice/fault"
-	xmlns="http://nl.hu.fnt/powerservice/"
-	targetNamespace="http://nl.hu.fnt/powerservice/">
+	xmlns:req="http://nl.hu.iac/powerservice/request"
+	xmlns:rsp="http://nl.hu.iac/powerservice/response"
+	xmlns:flt="http://nl.hu.iac/powerservice/fault"
+	xmlns="http://nl.hu.iac/powerservice/"
+	targetNamespace="http://nl.hu.iac/powerservice/">
 	<wsdl:types>
 		<xsd:schema>
-			<xsd:import namespace="http://nl.hu.fnt/powerservice/request"
+			<xsd:import namespace="http://nl.hu.iac/powerservice/request"
 				schemaLocation="request.xsd"/>
-			<xsd:import namespace="http://nl.hu.fnt/powerservice/response"
+			<xsd:import namespace="http://nl.hu.iac/powerservice/response"
 				schemaLocation="response.xsd"/>
-			<xsd:import namespace="http://nl.hu.fnt/powerservice/fault"
+			<xsd:import namespace="http://nl.hu.iac/powerservice/fault"
 				schemaLocation="fault.xsd"/>
 		</xsd:schema>
 	</wsdl:types>
@@ -51,9 +51,9 @@
 			</wsdl:fault>
 		</wsdl:operation>
 	</wsdl:binding>
-	<wsdl:service name="powerService">
+	<wsdl:service name="powerServiceService">
 		<wsdl:port name="WS-Port" binding="powerServiceBinding">
-			<soap:address location="http://localhost:8080/ws-producer/ws-producer"/>
+			<soap:address location="http://localhost:8080/ws-producer/soap"/>
 		</wsdl:port>
 	</wsdl:service>
 </wsdl:definitions>

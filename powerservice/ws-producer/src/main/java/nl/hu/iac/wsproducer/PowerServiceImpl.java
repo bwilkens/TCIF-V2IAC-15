@@ -4,6 +4,8 @@ import java.math.BigInteger;
 
 import javax.jws.WebService;
 
+import com.sun.xml.ws.developer.SchemaValidation;
+
 import nl.hu.iac.wsinterface.Fault;
 import nl.hu.iac.wsinterface.ObjectFactory;
 import nl.hu.iac.wsinterface.PowerFault;
@@ -11,11 +13,13 @@ import nl.hu.iac.wsinterface.PowerRequest;
 import nl.hu.iac.wsinterface.PowerResponse;
 import nl.hu.iac.wsinterface.PowerServiceInterface;
 
-@WebService()
+@WebService(endpointInterface = "nl.hu.iac.wsinterface.PowerServiceInterface")
+@SchemaValidation(handler = SchemaValidationErrorHandler.class)
 public class PowerServiceImpl implements PowerServiceInterface {
 
 	@Override
 	public PowerResponse calculatePower(PowerRequest request) throws Fault {
+		System.out.println("Request object "+request.getX()+ " " +request.getPower());
 		ObjectFactory factory = new ObjectFactory();
 		PowerResponse response = factory.createPowerResponse();
 		try {
@@ -30,7 +34,7 @@ public class PowerServiceImpl implements PowerServiceInterface {
 					+ " tot de macht " + request.getPower().toString()
 					+ " niet berekenen.");
 			Fault fault = new Fault(
-					"Er ging iets mis met het berekenen van de power", x);
+					"Er ging iets mis met het berekenen van de macht", x);
 			throw fault;
 		}
 		return response;

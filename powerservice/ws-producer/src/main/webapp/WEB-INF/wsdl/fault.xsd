@@ -1,4 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://nl.hu.fnt/powerservice/fault" elementFormDefault="qualified" targetNamespace="http://nl.hu.fnt/powerservice/fault">
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+	xmlns:tns="http://nl.hu.iac/powerservice/fault" 
+	elementFormDefault="qualified" 
+	targetNamespace="http://nl.hu.iac/powerservice/fault">
 	<element name="powerFault">
 		<complexType>
 			<annotation>

@@ -46,7 +46,7 @@
 						</goals>
 						<configuration>
 							<!--wsdls file directory -->
-							<wsdlDirectory>src/main/webapp/wsdl/</wsdlDirectory>
+							<wsdlDirectory>src/main/webapp/WEB-INF/wsdl/</wsdlDirectory>
 							<!-- which wsdl file -->
 							<wsdlFiles>
 								<wsdlFile>powerservice.wsdl</wsdlFile>
