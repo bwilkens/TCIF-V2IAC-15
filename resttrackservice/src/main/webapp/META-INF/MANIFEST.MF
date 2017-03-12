@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Class-Path: aopalliance-repackaged-2.4.0-b10.jar asm-all-3.3.1.jar hk2
+ -api-2.4.0-b10.jar hk2-locator-2.4.0-b10.jar hk2-utils-2.4.0-b10.jar 
+ jackson-annotations-2.4.0.jar jackson-core-2.4.1.jar jackson-databind
+ -2.4.1.jar jackson-jaxrs-base-2.4.1.jar jackson-jaxrs-json-provider-2
+ .4.1.jar jackson-module-jaxb-annotations-2.4.1.jar javassist-3.18.1-G
+ A.jar javax.annotation-api-1.2.jar javax.inject-2.4.0-b10.jar javax.w
+ s.rs-api-2.0.1.jar jersey-client-2.17.jar jersey-common-2.17.jar jers
+ ey-container-servlet-2.17.jar jersey-container-servlet-core-2.17.jar 
+ jersey-guava-2.17.jar jersey-media-jaxb-2.17.jar jersey-server-2.17.j
+ ar json-20090211.jar osgi-resource-locator-1.0.1.jar validation-api-1
+ .1.0.Final.jar
+
