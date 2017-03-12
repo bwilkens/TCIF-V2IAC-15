@@ -1,4 +1,4 @@
-package nl.hu.fnt.gsos.service;
+package nl.hu.iac.service;
 
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;

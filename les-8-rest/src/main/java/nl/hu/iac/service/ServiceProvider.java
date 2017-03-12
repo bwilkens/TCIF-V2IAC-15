@@ -1,4 +1,4 @@
-package nl.hu.fnt.gsos.service;
+package nl.hu.iac.service;
 
 
 public class ServiceProvider {

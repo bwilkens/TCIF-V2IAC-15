@@ -41,7 +41,7 @@
                 </servlet-class>
 		<init-param>
 		     <param-name>com.sun.jersey.config.property.packages</param-name>
-		     <param-value>nl.hu.fnt.gsos.rest</param-value>
+		     <param-value>nl.hu.iac.rest</param-value>
 		</init-param>
 		<init-param>
 		<param-name>com.sun.jersey.api.json.POJOMappingFeature</param-name>

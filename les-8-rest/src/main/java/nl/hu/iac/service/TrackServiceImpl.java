@@ -1,4 +1,4 @@
-package nl.hu.fnt.gsos.service;
+package nl.hu.iac.service;
 
 import java.util.ArrayList;
 import java.util.List;
